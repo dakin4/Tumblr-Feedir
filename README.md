@@ -3,13 +3,13 @@
 
 **Tumblr Feedir** is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
-Time spent: **X** hours spent in total
+Time spent: **3** hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [ ] User can scroll through a feed of images returned from the Tumblr API (5pts)
+- [x] User can scroll through a feed of images returned from the Tumblr API (5pts)
 
 The following **stretch** user stories are implemented:
 
@@ -24,20 +24,22 @@ The following **additional** user stories are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1.Creating the tableView, I don't understand when certain functions are called and what certain methods mean
+2.asynchronous behavior of the app, when are methods called whats calling them
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/jmSAq1p/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+The challenge of this app was using the experience from creating the Flixter app and applying it to building this app, there were some parts I got stuck. 
+Another challenge I ran into was misspelling a method I wanted to call.
 
 ## License
 

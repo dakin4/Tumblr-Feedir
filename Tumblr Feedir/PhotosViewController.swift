@@ -21,9 +21,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         
         tableview.delegate = self
         tableview.dataSource = self
-     
 
-      
         apigrab()
         
         // Do any additional setup after loading the view.
@@ -89,14 +87,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
