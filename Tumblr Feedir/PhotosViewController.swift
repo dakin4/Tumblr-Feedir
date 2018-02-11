@@ -43,7 +43,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
                 
                 //stores the returned array of dictionaries in our posts property
                 self.posts = responseDictionary["posts"] as! [[String: Any]]
-                print(self.posts)
+                //print(self.posts)
                 // TODO: Get the posts and store in posts property 
                 
                 // TODO: Reload the table view
@@ -88,6 +88,42 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let cell = sender as! UITableViewCell
+        
+        if let indexPath = tableview.indexPath(for: cell)
+        {
+        var post = posts[indexPath.row]
+            
+            var origi = post["original_size"] as! [String: Any]
+            
+           print(post)
+            //let originalSize = post["original_size"] as! [String: Any]
+            
+           // let urlString = originalSize["url"] as! String
+           
+           // let url = URL(string: urlString)
+            
+            let photos = segue.destination as! PhotoDetailsViewController
+            
+            photos.post = post
+         // photos.photoView.af_setImage(withURL: url!)
+            
+
+            
+            
+        }
+        
+        
+    }
+    
+    
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

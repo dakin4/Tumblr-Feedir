@@ -13,6 +13,7 @@ class tumblrcell: UITableViewCell {
     
     @IBOutlet weak var tumblrImage: UIImageView!
 
+    
     override func awakeFromNib() {
         
         super.awakeFromNib()
