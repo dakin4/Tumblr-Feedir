@@ -12,7 +12,8 @@ class PhotoDetailsViewController: UIViewController {
 
     @IBOutlet weak var photoView: UIImageView!
     
-    var post: [String: Any]?
+    var url: URL!
+    
     
     
     
@@ -23,7 +24,10 @@ class PhotoDetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        
+        if let url = url {
+            
+            photoView.af_setImage(withURL: url)
+        }
                
         
         

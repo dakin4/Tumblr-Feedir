@@ -95,20 +95,22 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         
         if let indexPath = tableview.indexPath(for: cell)
         {
-        var post = posts[indexPath.row]
+            let post = posts[indexPath.row]
             
-            var origi = post["original_size"] as! [String: Any]
+            var photos = post ["photos"] as! [[String: Any]]
             
-           print(post)
-            //let originalSize = post["original_size"] as! [String: Any]
+            let photo = photos[0]
             
-           // let urlString = originalSize["url"] as! String
-           
-           // let url = URL(string: urlString)
+            let originalsize = photo["original_size"] as! [String: Any]
             
-            let photos = segue.destination as! PhotoDetailsViewController
+            let urlString = originalsize["url"] as! String
             
-            photos.post = post
+            let url = URL(string: urlString)
+        
+            
+            let pho = segue.destination as! PhotoDetailsViewController
+            
+            pho.url = url
          // photos.photoView.af_setImage(withURL: url!)
             
 
